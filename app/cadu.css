@@ -2291,3 +2291,271 @@ footer {
 @media (max-width: 700px) {
   footer { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   CADU × Tivita — extensões (hero textual, split, contexto)
+============================================================ */
+
+/* Lista de urgência fora de #urgencia (ex.: #contexto) */
+#contexto .urgencia-list,
+#tivita-landing .urgencia-list {
+  list-style: none;
+  max-width: 40rem;
+  margin-top: 1.5rem;
+}
+
+#contexto .urgencia-list li,
+#tivita-landing .urgencia-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: max(1.05rem, var(--text-min));
+  color: var(--text-2);
+  line-height: 1.7;
+  margin-top: 0.85rem;
+}
+
+#contexto .urgencia-list li::before,
+#tivita-landing .urgencia-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 800;
+}
+
+/* Hero “CADU / para Tivita” (referência cadu-tivita.html) */
+.hero-brand-stage--text {
+  z-index: 0;
+}
+
+.hero-brand {
+  font-family: var(--font-logo), -apple-system, system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.78;
+  color: #f74e45;
+  font-size: clamp(7.5rem, 26vw, 18rem);
+}
+
+.hero-brand-sub {
+  margin-top: 0.75rem;
+  font-family: var(--font-logo), -apple-system, system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  color: var(--text-3);
+}
+
+.hero-main-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero-main-single .hero-left {
+  max-width: 50rem;
+}
+
+.issue-icon.green {
+  background: var(--green-soft);
+}
+
+/* Ordem de acentos dos cards de contexto (Tivita): laranja → azul → verde → vermelho */
+#tivita-landing .issue-cards .issue-card:nth-child(2) {
+  --card-accent: #7eb8f5;
+}
+
+#tivita-landing .issue-cards .issue-card:nth-child(3) {
+  --card-accent: var(--green);
+}
+
+/* Comparação Tivita / Cadu */
+.split-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 2.5rem;
+}
+
+.split-col {
+  position: relative;
+  overflow: hidden;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 0;
+}
+
+.split-col:first-child {
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+.split-col:last-child {
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  background: linear-gradient(145deg, #fff 0%, #fafaf8 100%);
+}
+
+.split-col:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--red);
+}
+
+.split-col-label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.split-col:first-child .split-col-label {
+  color: var(--text-3);
+}
+
+.split-col:last-child .split-col-label {
+  color: var(--red);
+}
+
+.split-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.split-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-2);
+  line-height: 1.45;
+}
+
+.split-col:last-child .split-list li {
+  color: var(--black);
+}
+
+.split-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.split-col:first-child .split-list li::before {
+  content: "·";
+  color: var(--text-3);
+}
+
+.split-together {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1.5rem 2rem;
+  background: var(--black);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.split-together-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.split-together-value {
+  font-family: var(--font-logo), -apple-system, system-ui, sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.statement-block {
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+  padding: 3.5rem 3rem;
+  background: var(--black);
+  border-radius: var(--radius-lg);
+}
+
+.statement-block::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(232, 53, 26, 0.08);
+}
+
+.statement-text {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  font-family: var(--font-logo), -apple-system, system-ui, sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.statement-text em {
+  font-style: normal;
+  color: var(--red);
+}
+
+.arch-node.tivita {
+  background: #eef5ff;
+  border-color: rgba(58, 123, 213, 0.25);
+  color: #3a7bd5;
+}
+
+.arch-node.cadu {
+  background: var(--red-soft);
+  border-color: rgba(232, 53, 26, 0.25);
+  color: var(--red);
+}
+
+.tivita-pilot-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+@media (max-width: 980px) {
+  .problema-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .split-col:first-child {
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .split-col:last-child {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+}
+
+@media (max-width: 640px) {
+  .statement-block {
+    padding: 2.5rem 1.5rem;
+  }
+}
