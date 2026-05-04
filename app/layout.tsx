@@ -16,9 +16,9 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CADU Planos de Saúde",
+  title: "CADU × Ameplan — Piloto",
   description:
-    "Plataforma de dados e sistema de coordenação do cuidado em autismo e neurodesenvolvimento para operadoras de saúde suplementar: visibilidade clínica, auditoria e eficiência na rede.",
+    "Material CADU × Ameplan: visibilidade e controle no cuidado em TEA — dados estruturados e piloto sem troca de sistemas core.",
 };
 
 export default function RootLayout({

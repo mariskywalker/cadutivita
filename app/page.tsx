@@ -16,7 +16,7 @@ export default function Home() {
         <a href="https://cadu.health" className="nav-brand">
           <span className="nav-wordmark">CADU</span>
           <span className="nav-slash">/</span>
-          <span className="nav-context">Saúde Suplementar</span>
+          <span className="nav-context">Ameplan</span>
         </a>
 
         <ul className="nav-links">
@@ -53,7 +53,7 @@ export default function Home() {
         </ul>
 
         <a href="#proximo" className="nav-cta">
-          Contato
+          Propor piloto
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M3 8h10M9 4l4 4-4 4" />
           </svg>
@@ -101,45 +101,33 @@ export default function Home() {
 
               <div className="pill-tag reveal">
                 <span className="pill-dot" />
-                CADU / Saúde Suplementar
+                CADU / Ameplan — Proposta de Piloto
               </div>
 
               <h1 className="hero-headline reveal d1">
-                O custo não está no tratamento.
+                Mais controle e previsibilidade
                 <br />
-                Está na falta de visibilidade.
+                no cuidado em TEA.
               </h1>
 
               <p className="hero-body reveal d2" style={{ marginTop: "1rem", maxWidth: "42rem" }}>
-                CADU é a infraestrutura de dados e coordenação do cuidado em neurodesenvolvimento para operadoras de saúde
-                suplementar.
+                O Cadu organiza e centraliza o acompanhamento de crianças com TEA, permitindo visibilidade real sobre o
+                cuidado — e base concreta para decisão assistencial e financeira da Ameplan.
               </p>
 
               <div className="hero-btns reveal d3" style={{ flexWrap: "wrap", rowGap: "8px" }}>
                 <a
-                  href="mailto:contato@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
+                  href="mailto:contato@cadu.health?subject=Piloto%20CADU%20%C3%97%20Ameplan"
                   className="btn-red"
                 >
-                  Iniciar piloto com minha operadora
+                  Propor piloto com a Ameplan
                   <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                   </svg>
                 </a>
                 <a
-                  href="mailto:contato@cadu.health?subject=Proposta%20t%C3%A9cnica%20CADU"
-                  className="btn-ghost"
-                >
-                  Ver proposta técnica
-                </a>
-                <a
                   href="mailto:contato@cadu.health?subject=Contato%20-%20CADU%20Sa%C3%BAde%20Suplementar"
-                  style={{
-                    fontSize: "0.875rem",
-                    fontWeight: 500,
-                    color: "var(--text-2)",
-                    textDecoration: "underline",
-                    textUnderlineOffset: "3px",
-                  }}
+                  className="btn-ghost"
                 >
                   Falar com a equipe
                 </a>
@@ -161,27 +149,29 @@ export default function Home() {
               <div className="hero-stats reveal d4">
                 <div>
                   <span className="stat-num">
-                    2<sup>mi</sup>
+                    +40%<sup />
                   </span>
-                  <span className="stat-label">Alta frequência de terapias sem visibilidade longitudinal</span>
+                  <span className="stat-label">
+                    aumento em solicitações de terapia nas operadoras nos últimos 3 anos
+                  </span>
                 </div>
                 <div>
                   <span className="stat-num">
-                    18<sup>m</sup>
+                    3–5<sup>×</sup>
                   </span>
-                  <span className="stat-label">Baixa visibilidade sobre evolução clínica real</span>
+                  <span className="stat-label">custo per capita de beneficiário com TEA comparado à média da carteira</span>
                 </div>
                 <div>
-                  <span className="stat-num">
-                    60<sup>%</sup>
+                  <span className="stat-num">0</span>
+                  <span className="stat-label">
+                    operadoras com visibilidade longitudinal real sobre o cuidado em neurodesenvolvimento
                   </span>
-                  <span className="stat-label">Custo elevado por paciente sem previsibilidade</span>
                 </div>
                 <div>
-                  <span className="stat-num">
-                    24<sup>h</sup>
+                  <span className="stat-num">?</span>
+                  <span className="stat-label">
+                    custo real por beneficiário com TEA — dado que a maioria das operadoras não tem
                   </span>
-                  <span className="stat-label">Risco constante de fraude e duplicidade de atendimento</span>
                 </div>
               </div>
 
@@ -216,7 +206,7 @@ export default function Home() {
           </div>
           <div className="ticker-item">
             <span className="ticker-dot" aria-hidden="true" />
-            Integração entre prestadores e operadora
+            Integração entre prestadores e a Ameplan
           </div>
           <div className="ticker-item">
             <span className="ticker-dot" aria-hidden="true" />
@@ -248,7 +238,7 @@ export default function Home() {
           </div>
           <div className="ticker-item">
             <span className="ticker-dot" aria-hidden="true" />
-            Integração entre prestadores e operadora
+            Integração entre prestadores e a Ameplan
           </div>
           <div className="ticker-item">
             <span className="ticker-dot" aria-hidden="true" />
@@ -283,7 +273,7 @@ export default function Home() {
             <div className="reveal">
               <p className="eyebrow">O problema</p>
               <h2 className="section-headline">
-                A operadora paga.
+                A Ameplan paga.
                 <br />
                 Mas não consegue ver.
               </h2>
@@ -310,7 +300,7 @@ export default function Home() {
                 <div style={{ flex: 1 }}>
                   <div className="issue-title">Fragmentação entre prestadores</div>
                   <div className="issue-desc">
-                    Clínicas operam isoladas, sem compartilhamento de dados.
+                    Clínicas operam isoladas, sem compartilhamento de dados sobre a criança.
                   </div>
                 </div>
                 <div className="issue-badge">Crítico</div>
@@ -321,7 +311,7 @@ export default function Home() {
                 <div style={{ flex: 1 }}>
                   <div className="issue-title">Baixa visibilidade clínica</div>
                   <div className="issue-desc">
-                    A operadora não enxerga evolução, apenas faturamento.
+                    A Ameplan não enxerga evolução — apenas faturamento.
                   </div>
                 </div>
                 <div className="issue-badge">Crítico</div>
@@ -330,9 +320,9 @@ export default function Home() {
               <div className="issue-card">
                 <div className="issue-icon blue">⏱️</div>
                 <div style={{ flex: 1 }}>
-                  <div className="issue-title">Duplicidade e sobreposição de atendimentos</div>
+                  <div className="issue-title">Sem histórico longitudinal</div>
                   <div className="issue-desc">
-                    Sessões redundantes sem coordenação.
+                    Ninguém tem a linha do tempo completa. Cada agente vê apenas um fragmento.
                   </div>
                 </div>
                 <div className="issue-badge">Urgente</div>
@@ -343,7 +333,7 @@ export default function Home() {
                 <div style={{ flex: 1 }}>
                   <div className="issue-title">Auditoria reativa</div>
                   <div className="issue-desc">
-                    Problemas são identificados tarde, quando o custo já ocorreu.
+                    Problemas são identificados tarde — quando o custo já ocorreu e sem base clínica para contestar.
                   </div>
                 </div>
                 <div className="issue-badge">Urgente</div>
@@ -362,11 +352,11 @@ export default function Home() {
 
           <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
             {[
-              "Aumento progressivo de custo por paciente",
-              "Baixa previsibilidade financeira",
+              "Aumento progressivo de custo por beneficiário com TEA",
+              "Baixa previsibilidade financeira na carteira",
               "Dificuldade de controle de rede credenciada",
-              "Risco de fraude assistencial",
-              "Ineficiência na alocação de recursos",
+              "Decisões de autorização sem contexto longitudinal",
+              "Ineficiência na alocação de suporte terapêutico",
             ].map((t, i) => (
               <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
                 {t}
@@ -390,10 +380,10 @@ export default function Home() {
 
           <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
             {[
-              "Diagnósticos de TEA +15–20%/ano",
-              "R$ 2B+ em judicialização",
-              "Open Health chegando",
-              "Custo per capita TEA = 3–5× maior",
+              "Diagnósticos de TEA +15–20%/ano no Brasil",
+              "R$ 2B+ em judicialização relacionada ao neurodesenvolvimento",
+              "Open Health chegando — obrigações de dados estruturados",
+              "Custo per capita TEA = 3–5× maior que a média da carteira",
             ].map((t, i) => (
               <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
                 {t}
@@ -452,7 +442,7 @@ export default function Home() {
               O problema é que ele não é mensurável.
             </p>
             <p className="section-body solucao-vacuo">
-              O CADU não substitui sistemas da operadora nem dos prestadores.
+              O CADU não substitui sistemas da Ameplan nem dos prestadores.
             </p>
             <p className="eyebrow">Infraestrutura de dados e coordenação do cuidado</p>
             <h2 className="section-headline">O CADU permite</h2>
@@ -478,7 +468,7 @@ export default function Home() {
               <span className="sol-icon">🤝</span>
               <div className="sol-title">Integração entre prestadores</div>
               <div className="sol-body">
-                Dados circulam entre prestadores e operadora com perfis, trilhas e regras de acesso.
+                Dados circulam entre prestadores e a Ameplan com perfis, trilhas e regras de acesso.
               </div>
               <span className="sol-tag">Rede de cuidado</span>
             </div>
@@ -498,7 +488,7 @@ export default function Home() {
               <span className="sol-icon">🔍</span>
               <div className="sol-title">Alinhamento do cuidado</div>
               <div className="sol-body">
-                Plano terapêutico, agenda e execução visíveis entre prestadores e operadora.
+                A Ameplan acessa dados organizados sobre o cuidado real — não apenas o que foi autorizado e faturado.
               </div>
               <span className="sol-tag">Operação</span>
             </div>
@@ -567,7 +557,7 @@ export default function Home() {
         <div className="wrap">
           <div className="reveal">
             <p className="eyebrow">Arquitetura de cuidado</p>
-            <h2 className="section-headline">Paciente → Prestadores → Operadora</h2>
+            <h2 className="section-headline">Paciente → Prestadores → Ameplan</h2>
             <p className="section-body" style={{ marginTop: "1rem" }}>
               O CADU atua como camada de dados, comunicação e acompanhamento longitudinal, permitindo leitura integrada da
               jornada.
@@ -580,7 +570,7 @@ export default function Home() {
               <span className="arch-arrow" aria-hidden="true" />
               <span className="arch-node">Prestadores</span>
               <span className="arch-arrow" aria-hidden="true" />
-              <span className="arch-node">Operadora</span>
+              <span className="arch-node">Ameplan</span>
             </div>
 
             <div className="arch-hub">
@@ -645,7 +635,7 @@ export default function Home() {
             <p className="section-body" style={{ marginTop: "1rem" }}>
               Dados de pacientes são anonimizados e agregados para fins de gestão e auditoria. O acesso é controlado por
               perfil com trilha de auditoria. Consentimento é coletado e registrado na entrada do paciente na plataforma.
-              Nenhum dado identificável é compartilhado com a operadora sem base legal e consentimento explícito.
+              Nenhum dado identificável é compartilhado com a Ameplan sem base legal e consentimento explícito.
             </p>
             <p className="section-body" style={{ marginTop: "1rem", marginBottom: 0 }}>
               A governança é estruturada para suportar auditorias da ANS e processos internos de compliance.
@@ -663,8 +653,8 @@ export default function Home() {
             <p className="eyebrow">Piloto</p>
             <h2 className="section-headline">Piloto de 90 dias com dados reais</h2>
             <p className="section-body" style={{ marginTop: "1rem", maxWidth: "44rem" }}>
-              Em noventa dias você mede visibilidade da jornada, redução de duplicidade, alinhamento na rede,
-              inconsistências detectadas e ganho de eficiência — sem obrigação de trocar sistemas core.
+              Em noventa dias a Ameplan mede visibilidade da jornada, redução de duplicidade, alinhamento na rede e
+              inconsistências detectadas — sem obrigação de trocar sistemas core.
             </p>
           </div>
 
@@ -672,9 +662,12 @@ export default function Home() {
             <div>
               <ol className="piloto-ppp-steps">
                 {[
-                  ["Visibilidade da jornada", "Leitura integrada do percurso do paciente em rede selecionada."],
+                  [
+                    "Visibilidade da jornada",
+                    "Leitura integrada do percurso de cada criança na rede selecionada da Ameplan.",
+                  ],
                   ["Redução de duplicidade", "Identificação e redução de sobreposição de sessões e atendimentos."],
-                  ["Melhoria no alinhamento", "Mesma rede, com execução e aderência mais visíveis para a operadora."],
+                  ["Melhoria no alinhamento", "Mesma rede, com execução e aderência mais visíveis para a Ameplan."],
                   ["Inconsistências detectadas", "Sinais e padrões anômalos para auditoria e intervenção precoce."],
                 ].map(([title, desc], idx) => (
                   <li key={title} className={`reveal${idx > 0 ? ` d${Math.min(idx, 3)}` : ""}`}>
@@ -689,7 +682,17 @@ export default function Home() {
             </div>
 
             <div className="pilot-indicators reveal d2">
-              <p className="pilot-indicators-title">Indicadores</p>
+              <p className="pilot-indicators-title">Parâmetros do piloto</p>
+              <ul className="pilot-indicators-list">
+                <li>Beneficiários: 100 – 300 crianças</li>
+                <li>Duração: 90 dias</li>
+                <li>Perfil: TEA com acompanhamento ativo</li>
+                <li>Integração: Rede credenciada existente</li>
+                <li>Relatório: Consolidado com insights reais</li>
+              </ul>
+              <p className="pilot-indicators-title" style={{ marginTop: "1.25rem" }}>
+                Indicadores
+              </p>
               <ul className="pilot-indicators-list">
                 <li>Custo por paciente</li>
                 <li>Frequência de sessões</li>
@@ -714,7 +717,7 @@ export default function Home() {
               "Piloto inicial",
               "Expansão por rede",
               "Contratação baseada em resultado",
-              "Modelo SaaS para operadora",
+              "Modelo SaaS para a Ameplan",
             ].map((t, i) => (
               <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
                 {t}
@@ -732,12 +735,12 @@ export default function Home() {
           </div>
           <div className="valor-grid">
             {[
-              "Maior controle sobre custo assistencial",
-              "Visibilidade real da jornada do paciente",
-              "Redução de fraude e inconsistências",
+              "Maior controle sobre custo assistencial em TEA",
+              "Visibilidade real da jornada de cada criança",
+              "Base de decisão para auditoria clínica e financeira",
               "Melhoria da eficiência da rede credenciada",
-              "Base de decisão para auditoria e regulação",
-              "Previsibilidade financeira",
+              "Previsibilidade financeira na carteira TEA",
+              "Sem obrigação de trocar sistemas existentes",
             ].map((t, i) => (
               <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
                 {t}
@@ -753,23 +756,23 @@ export default function Home() {
         </div>
 
         <div className="wrap" style={{ textAlign: "center" }}>
-          <p className="cta-eyebrow reveal">Contato</p>
+          <p className="cta-eyebrow reveal">CADU × Ameplan</p>
 
           <h2 className="cta-headline reveal d1">
             Piloto de 90 dias
           </h2>
 
           <p className="cta-sub reveal d2">
-            Rede selecionada, indicadores desde o primeiro mês e leitura clínica e financeira comparável — sem troca de
-            core.
+            O Cadu não substitui a rede. Ele organiza o cuidado e o torna visível — permitindo que a Ameplan gerencie com
+            informação real.
           </p>
 
           <div className="cta-btns reveal d3" style={{ flexWrap: "wrap", justifyContent: "center" }}>
             <a
-              href="mailto:contato@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
+              href="mailto:contato@cadu.health?subject=Iniciar%20piloto%20CADU%20%C3%97%20Ameplan"
               className="btn-white"
             >
-              Iniciar piloto com minha operadora
+              Iniciar piloto com a Ameplan
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M3 8h10M9 4l4 4-4 4" />
               </svg>
@@ -788,8 +791,10 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="footer-left">CADU — Dados e visibilidade para gestão do neurodesenvolvimento</div>
-        <div className="footer-right">Saúde Suplementar · Dados · Auditoria · Eficiência · Controle</div>
+        <div className="footer-left">
+          CADU — Visibilidade e controle no cuidado em neurodesenvolvimento · Material preparado para a Ameplan
+        </div>
+        <div className="footer-right">Saúde Suplementar · Dados · Auditoria · TEA · Piloto</div>
       </footer>
     </>
   );
