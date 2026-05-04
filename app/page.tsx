@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CaduHeroLogoDynamic } from "./components/CaduHeroLogoDynamic";
 import { ScrollEffects } from "./components/ScrollEffects";
 import {
@@ -74,13 +73,15 @@ export default function Home() {
               <CaduHeroLogoDynamic />
               <p className="hero-brand-para enter-2">para</p>
               <div className="hero-brand-partners enter-3">
-                <Image
+                {/* img: SVG em /public — evita edge cases do Image optimizer em produção (Vercel) */}
+                {/* eslint-disable-next-line @next/next/no-img-element -- asset estático vetorial */}
+                <img
                   src="/cadu-brand/amplan-branding.svg"
                   alt=""
                   width={3803}
                   height={913}
+                  decoding="async"
                   className="hero-brand-amplan-img"
-                  unoptimized
                 />
               </div>
             </div>
